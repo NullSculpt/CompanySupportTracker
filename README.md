@@ -1,4 +1,4 @@
-# CompanySupportTracker
+# Company Support Tracker
 
 A Windows Forms (C#) desktop application for tracking and managing company support requests. Built with a simple login system, full CRUD operations, search/filtering, and a reporting module powered by Microsoft ReportViewer.
 
@@ -20,12 +20,15 @@ A Windows Forms (C#) desktop application for tracking and managing company suppo
 ## Screenshots
 
 **Login**
+
 ![Login screen](screenshots/Login.png)
 
 **Main Menu**
+
 ![Main menu](screenshots/MainMenu.png)
 
 **Report**
+
 ![Report view](screenshots/Report.png)
 
 ## Getting Started
@@ -83,7 +86,7 @@ This project is for educational/portfolio purposes. Feel free to fork and adapt.
 
 ---
 
-# CompanySupportTracker (Türkçe)
+# Company Support Tracker (Türkçe)
 
 Şirket destek taleplerini takip etmek ve yönetmek için geliştirilmiş bir Windows Forms (C#) masaüstü uygulaması. Basit bir giriş sistemi, tam CRUD işlemleri, arama/filtreleme ve Microsoft ReportViewer ile çalışan bir raporlama modülü içerir.
 
@@ -105,12 +108,15 @@ This project is for educational/portfolio purposes. Feel free to fork and adapt.
 ## Ekran Görüntüleri
 
 **Giriş Ekranı**
+
 ![Giriş ekranı](screenshots/Login.png)
 
 **Ana Menü**
+
 ![Ana menü](screenshots/MainMenu.png)
 
 **Rapor**
+
 ![Rapor görünümü](screenshots/Report.png)
 
 ## Kurulum
