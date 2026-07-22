@@ -87,7 +87,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.groupBox1.Controls.Add(this.btnShowAll);
             this.groupBox1.Controls.Add(this.btnShow);
@@ -107,26 +107,32 @@
             // 
             // btnShowAll
             // 
+            this.btnShowAll.BackColor = System.Drawing.Color.DimGray;
             this.btnShowAll.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnShowAll.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnShowAll.ForeColor = System.Drawing.Color.LightGray;
             this.btnShowAll.Location = new System.Drawing.Point(637, 19);
             this.btnShowAll.Name = "btnShowAll";
             this.btnShowAll.Size = new System.Drawing.Size(75, 64);
             this.btnShowAll.TabIndex = 8;
             this.btnShowAll.Text = "Show All";
             this.btnShowAll.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnShowAll.UseVisualStyleBackColor = true;
+            this.btnShowAll.UseVisualStyleBackColor = false;
             this.btnShowAll.Click += new System.EventHandler(this.btnShowAll_Click);
             // 
             // btnShow
             // 
+            this.btnShow.BackColor = System.Drawing.Color.DimGray;
             this.btnShow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnShow.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnShow.ForeColor = System.Drawing.Color.LightGray;
             this.btnShow.Location = new System.Drawing.Point(718, 19);
             this.btnShow.Name = "btnShow";
             this.btnShow.Size = new System.Drawing.Size(75, 64);
             this.btnShow.TabIndex = 7;
             this.btnShow.Text = "Show";
             this.btnShow.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnShow.UseVisualStyleBackColor = true;
+            this.btnShow.UseVisualStyleBackColor = false;
             this.btnShow.Click += new System.EventHandler(this.btnShow_Click);
             // 
             // endDate
@@ -148,7 +154,7 @@
             this.cmbCompany.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cmbCompany.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cmbCompany.FormattingEnabled = true;
-            this.cmbCompany.Location = new System.Drawing.Point(94, 26);
+            this.cmbCompany.Location = new System.Drawing.Point(108, 26);
             this.cmbCompany.Name = "cmbCompany";
             this.cmbCompany.Size = new System.Drawing.Size(114, 21);
             this.cmbCompany.TabIndex = 4;
@@ -156,27 +162,33 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(286, 54);
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.ForeColor = System.Drawing.Color.LightGray;
+            this.label3.Location = new System.Drawing.Point(278, 55);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 13);
+            this.label3.Size = new System.Drawing.Size(57, 13);
             this.label3.TabIndex = 3;
             this.label3.Text = "End Date:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(286, 24);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.ForeColor = System.Drawing.Color.LightGray;
+            this.label2.Location = new System.Drawing.Point(274, 26);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 13);
+            this.label2.Size = new System.Drawing.Size(61, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "Start Date:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.ForeColor = System.Drawing.Color.LightGray;
             this.label1.Location = new System.Drawing.Point(12, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 13);
+            this.label1.Size = new System.Drawing.Size(90, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Company Name:";
             // 
@@ -200,7 +212,6 @@
             this.Name = "Report";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Report";
-            this.TransparencyKey = System.Drawing.Color.Empty;
             this.Load += new System.EventHandler(this.Report_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tblCompanyBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.companySupportDataSetBindingSource)).EndInit();

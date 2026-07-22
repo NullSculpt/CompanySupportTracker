@@ -8,8 +8,8 @@ GO
 -- Company support records
 CREATE TABLE tbl_Company (
     id          INT IDENTITY(1,1) PRIMARY KEY,
-    companyname NVARCHAR(50)  NOT NULL,
-    explanation NVARCHAR(300) NOT NULL,
+    companyname NVARCHAR(1000)  NOT NULL,
+    explanation NVARCHAR(1000) NOT NULL,
     result      BIT           NULL,
     [date]      DATE          NULL,
     username    NVARCHAR(50)  NULL

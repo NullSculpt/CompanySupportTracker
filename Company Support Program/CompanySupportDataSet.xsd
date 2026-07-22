@@ -45,20 +45,20 @@ ORDER BY id DESC</CommandText>
               <xs:element name="companyname" msprop:Generator_ColumnPropNameInTable="companynameColumn" msprop:Generator_ColumnPropNameInRow="companyname" msprop:Generator_UserColumnName="companyname" msprop:Generator_ColumnVarNameInTable="columncompanyname">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
-                    <xs:maxLength value="50" />
+                    <xs:maxLength value="1000" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
               <xs:element name="explanation" msprop:Generator_ColumnPropNameInTable="explanationColumn" msprop:Generator_ColumnPropNameInRow="explanation" msprop:Generator_UserColumnName="explanation" msprop:Generator_ColumnVarNameInTable="columnexplanation">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
-                    <xs:maxLength value="50" />
+                    <xs:maxLength value="1000" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
               <xs:element name="result" msprop:Generator_ColumnPropNameInTable="resultColumn" msprop:Generator_ColumnPropNameInRow="result" msprop:Generator_UserColumnName="result" msprop:Generator_ColumnVarNameInTable="columnresult" type="xs:boolean" minOccurs="0" />
               <xs:element name="date" msprop:Generator_ColumnPropNameInTable="dateColumn" msprop:Generator_ColumnPropNameInRow="date" msprop:Generator_UserColumnName="date" msprop:Generator_ColumnVarNameInTable="columndate" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="username" msprop:Generator_ColumnPropNameInRow="username" msprop:Generator_ColumnPropNameInTable="usernameColumn" msprop:Generator_ColumnVarNameInTable="columnusername" msprop:Generator_UserColumnName="username" minOccurs="0">
+              <xs:element name="username" msprop:Generator_UserColumnName="username" msprop:Generator_ColumnPropNameInTable="usernameColumn" msprop:Generator_ColumnPropNameInRow="username" msprop:Generator_ColumnVarNameInTable="columnusername" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />

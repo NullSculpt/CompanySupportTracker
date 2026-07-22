@@ -469,9 +469,9 @@ namespace Company_Support_Program {
                 this.columnid.AllowDBNull = false;
                 this.columnid.ReadOnly = true;
                 this.columncompanyname.AllowDBNull = false;
-                this.columncompanyname.MaxLength = 50;
+                this.columncompanyname.MaxLength = 1000;
                 this.columnexplanation.AllowDBNull = false;
-                this.columnexplanation.MaxLength = 50;
+                this.columnexplanation.MaxLength = 1000;
                 this.columnusername.MaxLength = 50;
             }
             

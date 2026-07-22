@@ -63,6 +63,7 @@ namespace Company_Support_Program
             Refreshtable();
             btnUpdate.Enabled = false;
             list();
+
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -142,7 +143,7 @@ namespace Company_Support_Program
             try
             {
                 connection.GetConnection().Open();
-                SqlCommand search = new SqlCommand("SELECT * FROM tbl_Company where companyname like @p1", connection.GetConnection());
+                SqlCommand search = new SqlCommand("SELECT DISTINCT * FROM tbl_Company WHERE companyname like @p1", connection.GetConnection());
                 search.Parameters.AddWithValue("@p1", "%" + txtSearch.Text + "%");
                 SqlDataAdapter da = new SqlDataAdapter(search);
 
@@ -150,6 +151,12 @@ namespace Company_Support_Program
                 da.Fill(dt);
 
                 dataGridView1.DataSource = dt;
+                connection.GetConnection().Close();
+                if (txtSearch.Text == null)
+                {
+                    Refreshtable();
+                    list();
+                }
             }
             catch
             {
@@ -178,12 +185,13 @@ namespace Company_Support_Program
                     newcompany.Parameters.Add("@p5", SqlDbType.Date).Value = DateTime.Now;
                     newcompany.Parameters.Add("@p6", SqlDbType.NVarChar).Value = getusername;
                     newcompany.ExecuteNonQuery();
+                    connection.GetConnection().Close();
                     list();
                     Refreshtable();
                     clean();
                     btnUpdate.Enabled = false;
                     btnSave.Enabled = true;
-                    connection.GetConnection().Close();
+                    
 
                 }
                 else
